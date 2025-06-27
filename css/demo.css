@@ -1,0 +1,23 @@
+h1{
+    color: red;
+}
+p{
+    color: #bf0170;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: Times New Roman;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: none;
+    width: 600px;
+    font-style: italic;
+    word-spacing: 0.5px;
+    background-color: rgb(150, 199, 247);
+    border-bottom: 2px solid blue;
+}
+body{
+    background-color: gray;
+    background-image: url("../images/natural.jpg");
+    background-size: cover;
+}

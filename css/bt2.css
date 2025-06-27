@@ -1,0 +1,127 @@
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 40px;
+    line-height: 1.6
+}
+
+h3{
+    color: red;
+    text-align: right;
+    font-size: 11px;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 400; 
+    margin-bottom: 20px;
+}
+
+h1{
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+h2{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+span{
+    display: block;
+    font-size: 11px;
+    text-align: center;
+}
+
+p{
+    font-size: 11px;
+    margin: 5px;
+}
+
+hr{
+    margin: 10px;
+    
+}
+
+.first-class{
+    font-size: 18px;
+    text-align: left;
+    margin: 10px;
+}
+
+.second-class{
+    font-size: 18px;
+    text-align: left;
+    margin: 10px;
+}
+
+li {
+    font-size: 11px;
+}
+
+.third-class {
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    margin: 5px;
+}
+
+.fourth-class {
+    background-color: rgb(239, 236, 236);
+    display: block;
+    margin: 5px;
+    line-height: 1.4;
+}
+
+.fifth-class {
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    margin: 2px;
+    margin-left: 5px;
+    line-height: 1.4;
+}
+
+#first-id {
+    font-size: 11px;
+    text-align: left;
+    padding: 0;
+    margin: 2px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+#second-id {
+    font-size: 11px;
+    text-align: left;
+    padding: 0;
+    margin: 2px;
+    margin-left: 5px;
+    margin-bottom: -15px;
+    line-height: 1.4;
+}
+
+#third-id {
+    font-size: 11px;
+    font-weight: 400;
+    text-align: left;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+#fourth-id {
+    background-color: rgb(239, 236, 236);
+    line-height: 1.4;
+}
+
+#fifth-id {
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    margin: 2px;
+    margin-left: 5px;
+    line-height: 1.4;
+}
