@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.progress-container {
+    text-align: center;
+    margin: -15px auto;
+    height: 150px;
+    background-color: #fff;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background: white;
+    color: #999;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle.active {
+    border-color: #000;
+    color: #000;
+}
+
+.label {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #555;
+}
+
+.line {
+    height: 2px;
+    background-color: #ccc;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+.form-group {
+    background-color: white;
+    height: 580px;
+    width: 600px;
+    margin-left: -15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.form-group h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.form-group .name-group input {
+    margin-left: 15px;
+    height: 50px;
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.form-group .address-group input {
+    margin-left: 15px;
+    height: 50px;
+    width: 560px;
+    margin-bottom: 20px;
+}
+
+.form-group .country-group input {
+    margin-left: 15px;
+    height: 50px;
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.form-group .country-group select {
+    margin-left: 15px;
+    height: 50px;
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.form-group .phone-group input {
+    margin-left: 15px;
+    height: 50px;
+    width: 560px;
+    margin-bottom: 20px;
+}
+
+.form-group .checkbox-group input {
+    margin-left: 15px;
+    color: #161617;
+    margin-bottom: 20px;
+}
+
+.form-group button {
+    background-color: #000;
+    color: white;
+    height: 50px;
+    width: 560px;
+    margin-left: 15px;
+}
+
+.form-group button:hover {
+    background-color: #4a4141;
+}
+
+.order-group {
+    margin-right: -15px;
+}
+
+.order-summary-box {
+  background: white;
+  padding: 20px;
+  max-width: 355px;
+  margin-left: -5px;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.order-id {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333;
+  margin: 6px 0;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.order-details-box {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 355px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-box {
+    flex: 1;
+    max-width: 250px;
+    padding-right: 10px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.tshirt-box {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+.mega-box {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.close-btn {
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+}
+
+.product-desc {
+    font-size: 13px;
+    color: #777;
+    margin: 4px 0 10px;
+}
+
+.qty-box {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0; 
+    margin: 10px -20px;
+    width: 355px;
+    padding: none;
+}

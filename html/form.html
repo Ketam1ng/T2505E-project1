@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/layout.css"/>
+</head>
+<body>
+    <header class="section header">
+        <div class="container">
+            <h1>Header</h1>
+        </div>
+    </header>
+    <nav class="section nav">
+        <div class="container">
+            <h2>nav</h2>
+        </div>
+    </nav>
+    <main class="section main">
+        <div class="container three-columns">
+            <aside class="a-right">
+                <h2>Aside right</h2>
+            </aside>
+            <section class="content">
+                <h2>Form Demo</h2>
+                <!-- form demo -->
+                 <form method="get" action="#">
+                    <div class="form-group">
+                        <label for="name">Fullname:</label>
+                        <input type="text" name="Fullname" placeholder="Họ và Tên" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Điền Email" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Telephone:</label>
+                        <input type="tel" name="telephone" placeholder="Điền SĐT" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="dob" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" placeholder="Nhập mật khẩu" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <input type="radio" name="gender" value="male"/> Male
+                        <input type="radio" name="gender" value="female"/> Female
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Weight:</label>
+                        <input type="number" name="weight" placeholder="Nhập cân nặng kg"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="avatar">Avatar:</label>
+                        <input type="file" name="avatar"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="my_color">My Color:</label>
+                        <input type="color" name="my_color"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="my_time">My time:</label>
+                        <input type="time" name="my_time"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="terms">I agree to the terms and conditions:</label>
+                        <input type="checkbox" name="term" value="agree" id="terms"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <select name="City">
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="haiphong">Hải Phòng</option>
+                            <option value="haiduong">Hải Dương</option>
+                            <option value="hcm">Hồ Chí Minh</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hanoi">Hà Nội</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea name="address" rows="5" placeholder="Nhập địa chỉ"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">submit</button>
+                        <button type="reset">reset</button>
+                        <button type="button">button</button>
+                    </div>
+                 </form>
+            </section>
+            <aside class="a-left">
+                <h2>Aside left</h2>
+            </aside>
+        </div>
+    </main>
+    <footer class="section footer">
+        <div class="container">
+            <h2>footer</h2>
+        </div>
+    </footer>
+</body>
+</html>

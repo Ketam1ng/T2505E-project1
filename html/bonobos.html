@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONOBOS</title>
+    <link rel="stylesheet" href="/css/bonobos.css"/>
+</head>
+<body>
+    <div class="progress-container">
+        <h1 class="brand">BONOBOS</h1>
+        <div class="progress-bar">
+            <div class="step">
+                <div class="circle active">1</div>
+                <div class="label">Shipping</div>
+            </div>
+            <div class="line"></div>
+            <div class="step">
+                <div class="circle">2</div>
+                <div class="label">Billing</div>
+            </div>
+            <div class="line"></div>
+            <div class="step">
+                <div class="circle">3</div>
+                <div class="label">Review</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-group">
+            <h2>Shipping Address</h2>
+            <div class="name-group">
+                <label for="name"></label>
+                <input type="text" name="First Name" placeholder="First Name*" required/>
+                <label for="name"></label>
+                <input type="text" name="Last Name" placeholder="Last Name*" required/>
+            </div>
+            <div class="address-group">
+                <label for="name"></label>
+                <input type="text" name="Address Line 1" placeholder="Address Line 1*"/>
+                <br/>
+                <label for="name"></label>
+                <input type="text" name="Address Line 2" placeholder="Address Line 2"/>
+            </div>
+            <div class="country-group">
+                <label for="Country"></label>
+                <select name="Country">
+                    <option value="ThaiLan">Thái Lan</option>
+                    <option value="Singgapore">Sing-ga-pore</option>
+                    <option value="Vietnam">Việt Nam</option>
+                </select>
+                <input type="text" name="City" placeholder="City*"/>
+                <br/>
+                <label for="State"></label>
+                <select name="State">
+                    <option value="Hanoi">Hà Nội</option>
+                    <option value="Haiphong">Hải Phòng</option>
+                    <option value="Quangninh">Quảng Ninh</option>
+                </select>
+                <input type="text" name="zip" placeholder="Zip*"/>
+            </div>
+            <div class="phone-group">
+                <label for="telephone"></label>
+                <input type="tel" name="telephone" placeholder="Phone Number*"/>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" checked />
+                <label>Make Default</label>
+            </div>
+
+            <button type="submit">Continue To Billing Information</button>
+        </div>
+        <div class="order-group">
+            <div class="order-summary-box">
+                <h2 class="title">Order Summary</h2>
+                <p class="order-id">#312243643</p>
+
+                <div class="summary-row">
+                    <span class="label">Items</span>
+                    <span class="value">1</span>
+                </div>
+            
+                <div class="summary-row total">
+                    <span class="label">Total</span>
+                    <span class="value">$68.00</span>
+                </div>
+            </div>
+            <div class="order-details-box">
+                <h2 class="title">Order Details</h2>
+                <hr/>
+                <div class="mega-box">
+                    <img class="tshirt-box" src="/images/thirt.jpg"/>
+
+                    <div class="info-box">
+                        <div class="top-row">
+                            <h4 class="product-title">T-Shirt Button-Down</h4>
+                            <span class="close-btn">×</span>
+                        </div>
+                        <p class="product-desc">Reg XL in Black, Tailored</p>
+                        <div class="qty-box">Qty 1</div>
+                        <p class="price">$68.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
