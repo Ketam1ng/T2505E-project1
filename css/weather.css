@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    box-sizing: border-box;
+    width: 550px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border-radius: 6px;
+}
+
+.box-nav {
+    
+}
+
+img {
+    object-fit: fill;
+    min-width: 100px;
+    height: auto;
+}

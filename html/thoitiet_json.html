@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/weather.css"/>
+</head>
+<body>
+    <input  id="city" name="city" onkeyup="searchWeather()" placeholder="Enter your city">
+    <div class="container">
+        <br/>
+        <img id="icon" src="#"/>
+        <h1 id="wt-deg">0</h1>
+        <h1>°C|°F</h1>
+        <div class="box-nav">
+            <p>Pressure: <span id="wt-pre">0</span> mp</p>
+            <p>Wind: <span id="wt-wind">0</span> km/h</p>
+            <p>Cloud: <span id="wt-cloud">0</span> %</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function searchWeather(){
+            if(event.keyCode == 13){
+                var ip = document.getElementById("city");
+                var city = ip.value;
+
+                const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=09a71427c59d38d6a34f89b47d75975c&units=metric`;
+                fetch(url).then(rs=>rs.json())
+                .then(rs=>{
+                    document.getElementById("wt-deg").innerText = rs.main.temp;
+                    document.getElementById("wt-pre").innerText = rs.main.pressure;
+                    document.getElementById("wt-wind").innerText = rs.wind.speed;
+                    document.getElementById("wt-cloud").innerText = rs.clouds.all;
+                    for (var i=0;i<rs.weather.length;i++){
+                        var icon = rs.weather[i].icon;
+                        document.getElementById("icon").src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+                    }
+                })
+            }
+        }
+    </script>
+</body>
+</html>

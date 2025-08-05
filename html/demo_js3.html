@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo js3</title>
+</head>
+<body>
+    <h1 id="head1">Demo Js Effect</h1>
+    <h2><span id="min">10</span>:<span id="sec">00</span></h2>
+    <script type="text/javascript">
+        // setTimeout(function(){
+        //     var h = document.getElementById("head1");
+        //     // h.innerText = "Nội dung đã bị thay đổi";
+        //     // h.innerHTML = "<i>Nội dung đã bị thay đổi<i/>";
+        //         h.style.color = "Violet";
+        //         h.style.fontSize = "36px";
+        //         h.classList.add("demo");
+        //         h.classList.remove("xyz");
+        // },5000);
+            
+            var m = 10;
+            var s = 0;
+            var timer = setInterval(function(){
+                var min = document.getElementById("min");
+                var sec = document.getElementById("sec");
+                min.innerText = m>=10?m:"0"+m;
+                sec.innerText = s>=10?s:"0"+s;
+                    console.log(m+":"+s);
+                    s--;
+                    if(s<0){
+                        m--;
+                        s = 59;
+                    }
+                    if(m<0){
+                        clearInterval(timer);
+                    }
+            }, 1000);
+    </script>
+</body>
+</html>
