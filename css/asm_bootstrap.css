@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.showing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.showing h3 {
+    font-size: 12px;
+    color: grey;
+}
+
+.item {
+    width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    height: 520px;
+    border: none;
+}
+
+.item button {
+    margin-top: auto;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 35px;
+    font-weight: 600;
+    color: #0000008a;
+}
+
+.item .description {
+    flex-grow: 1;
+    min-height: 40px;
+    overflow: hidden;
+}
+
+.item p {
+    color: grey;
+}
+
+.item img {
+    
+    padding: none;
+    width: 200px;
+    height: 220px;
+}
+
+.item h2 {
+    font-size: 14px;
+}
+
+.stars {
+    display: inline-flex;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    color: #ccc;
+    transition: color 0.2s;
+}
+.stars i:hover,
+.stars i.active,
+.stars i.hover {
+    color: gold;
+}
