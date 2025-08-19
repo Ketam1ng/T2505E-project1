@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bi-facebook {
+    color: blue;
+    font-size: 12rem;
+}
+
+.bi-instagram {
+    color: rgba(209, 38, 38, 0.847);
+    font-size: 12rem;
+}
+
+.fa-discord {
+    color: grey;
+    font-size: 12rem;
+}
